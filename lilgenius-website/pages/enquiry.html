@@ -1,0 +1,92 @@
+---
+{
+  "title": "Enquire & Book a Visit | Li'l Genius Pre-School, Balewadi Pune",
+  "description": "Send an admission enquiry or book a campus visit at Li'l Genius Pre-School and Daycare Centre, Balewadi, Pune. We reply the same working day.",
+  "heading": "Enquire",
+  "priority": "0.9"
+}
+---
+<section class="section">
+  <div class="wrap split" style="align-items:start">
+    <div>
+      <p class="eyebrow"><span class="cube-badge c-green"></span> Enquiry</p>
+      <h1>Tell us about your child</h1>
+      <p class="lead">Fill this in and we will come back the same working day with seat availability, the current fee structure and a time to visit.</p>
+      <p>In a hurry? Call <a class="textlink" href="tel:{{phone_e164}}">{{phone_display}}</a> or <a class="textlink" href="https://wa.me/{{whatsapp}}" target="_blank" rel="noopener">message us on WhatsApp</a> instead.</p>
+
+      <div class="card" style="margin-top:1.5rem">
+        <h2 style="font-size:var(--step-1)">What happens next</h2>
+        <ul class="ticks">
+          <li><span class="cube-badge c-red"></span> We call you back, usually within a few hours</li>
+          <li><span class="cube-badge c-green"></span> We confirm whether a seat is free in your child&rsquo;s group</li>
+          <li><span class="cube-badge c-indigo"></span> We fix a morning for you to visit and meet the principal</li>
+        </ul>
+        <p class="muted" style="margin-bottom:0">We use your details only to answer this enquiry. We do not share them with anyone else.</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <form class="form" id="enquiry-form" data-endpoint="{{form_endpoint}}" data-whatsapp="{{whatsapp}}" data-phone="{{phone_display}}" novalidate>
+        <div id="form-status" class="form-status" tabindex="-1" role="status" aria-live="polite"></div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="parent">Parent&rsquo;s name <span class="req" aria-hidden="true">*</span></label>
+            <input id="parent" name="parent" type="text" autocomplete="name" required>
+            <span class="err" data-err="parent"></span>
+          </div>
+          <div class="field">
+            <label for="phone">Mobile number <span class="req" aria-hidden="true">*</span></label>
+            <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required>
+            <span class="err" data-err="phone"></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" autocomplete="email">
+          <span class="err" data-err="email"></span>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="child">Child&rsquo;s name</label>
+            <input id="child" name="child" type="text">
+          </div>
+          <div class="field">
+            <label for="age">Child&rsquo;s age or date of birth <span class="req" aria-hidden="true">*</span></label>
+            <input id="age" name="age" type="text" placeholder="e.g. 3 years, or 14/05/2023" required>
+            <span class="err" data-err="age"></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="programme">Programme you are interested in</label>
+          <select id="programme" name="programme">
+            <option>Not sure yet &mdash; please advise</option>
+            <option>Playgroup (2&ndash;3 years)</option>
+            <option>Nursery (3&ndash;4 years)</option>
+            <option>Junior KG (4&ndash;5 years)</option>
+            <option>Senior KG (5&ndash;6 years)</option>
+            <option>Daycare only</option>
+            <option>Preschool + daycare</option>
+            <option>Holiday workshop</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Anything you would like us to know</label>
+          <textarea id="message" name="message" placeholder="Allergies, preferred visit timing, questions about fees&hellip;"></textarea>
+        </div>
+
+        <div class="field" hidden aria-hidden="true">
+          <label for="company">Leave this empty</label>
+          <input id="company" name="company" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <button class="btn" type="submit">Send enquiry</button>
+        <p class="form-note">Fields marked <span class="req">*</span> are needed so we can call you back.</p>
+      </form>
+    </div>
+  </div>
+</section>

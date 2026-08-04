@@ -1,0 +1,39 @@
+{
+  "_comment": "Edit this file to change details across the WHOLE site, then re-run: python3 build.py",
+
+  "name": "Li'l Genius Pre-School",
+  "legal_name": "Li'l Genius Preschool and Daycare Centre",
+  "short_name": "Li'l Genius",
+  "tagline": "Do it your own the best",
+  "established": "2019",
+
+  "phone_display": "090753 57058",
+  "phone_e164": "+919075357058",
+  "whatsapp": "919075357058",
+  "email": "lilgeniuspreschool@yahoo.com",
+
+  "address_street": "Near Supreme Palms Society, Balewadi Road",
+  "address_locality": "Balewadi, Pune",
+  "address_region": "Maharashtra",
+  "address_postal": "411045",
+  "address_country": "IN",
+  "address_full": "Supreme Palms, Balewadi Road, Near Supreme Palms Society, Pune, Maharashtra 411045",
+
+  "geo_lat": "18.5745",
+  "geo_lng": "73.7690",
+  "maps_link": "https://maps.app.goo.gl/PGGPW9Jd9ZqqAuoD8",
+  "maps_embed": "https://www.google.com/maps?q=Li%27l+Genius+Preschool+Balewadi+Pune&output=embed",
+
+  "hours_text": "Monday to Saturday, 8:30 am - 7:00 pm. Closed on Sunday.",
+  "hours_schema": ["Mo-Sa 08:30-19:00"],
+
+  "instagram": "https://www.instagram.com/lilgeniuspreschool/",
+  "facebook": "https://www.facebook.com/lilGpreschool/",
+
+  "base_url": "https://www.lilgeniuspreschool.com",
+
+  "form_endpoint": "",
+  "_form_note": "Leave blank to send enquiries via WhatsApp (works with zero backend). Or paste a Formspree/Web3Forms endpoint URL to receive enquiries by email.",
+
+  "ga_id": ""
+}
